@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        .btn{
+            display:block;
+            width:150px;
+            height:50px;
+            line-height:50px;
+            text-align: center;
+            border-radius:15px;
+            color:white;
+            font-weight: 700px;
+            font-size: 1.2rem;
+            margin:5px;
+        }
+        .btn--primary{
+            background-color: darkslategrey;
+        }
+        .btn--secondary{
+            background-color: darkcyan;
+        }
+        .btn:hover{ /*버튼에 마우스를 갖다댔을때의 이벤트 처리*/
+            opacity:0.6;
+            font-size: 1.4rem;
+        }
+        .btn:active{    /*버튼을 클릭하고있을때의 이벤트처리*/
+            color:gray;
+            font-size:1.2rem;
+            opacity:0.8;
+        }
+        .btn:visited{   /*버튼을 한번이상 클릭한 경우*/
+            background-color: brown;
+        }
+        .btn:link{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <a href="#a" id="a1" class="btn btn--primary">안뇽</a>
+    <a href="" id="a2" class="btn btn--secondary">안뇽</a>
+</body>
+</html>
