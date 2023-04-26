@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        div{
+            background-color: orangered;
+        }
+
+        .d1{
+            width:300px;
+            height:300px;
+
+            /* top,right,bottom,left:10px */
+            /* padding:10px; */
+
+            /* top,bottom:10px left,right:20px */
+            /* padding:10px 20px; */
+
+            /* top:10px right:20px bottom:30px left:20px */
+            /* padding:10px 20px 30px; */
+
+            /* top:10px right:20px bottom:30px left:40px */
+            /* padding:10px 20px 30px 40px;   패딩이 커지면 전체사이즈도 커진다. */
+
+            padding-top:10px;
+            padding-right:20px;
+            padding-bottom:30px;
+            padding-left:40px;
+        }
+
+        .parent{
+            width:400px;
+            height:400px;
+            background-color: mediumslateblue;
+            position:relative;
+        }
+
+        .son{
+            width:150px;
+            height:150px;
+            background-color: rgb(192, 185, 223);
+            padding:190px;   /*부모와 상관없이 움직임*/
+            }
+    </style>
+</head>
+<body>
+    
+    <div class="d1">안녕월드</div>
+
+    <div class="d1">헬로월드</div>
+    <div class="parent">
+        <div class="son">나는 썬</div>
+    </div>
+
+</body>
+</html>

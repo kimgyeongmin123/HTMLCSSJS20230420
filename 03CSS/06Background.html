@@ -11,10 +11,11 @@
         }
         body{
             margin:0px;
+            height:3000px;
         }
         #wapper{
-            width:500px;
-            height:500px;
+            width:100%;
+            height:3000px;
             border:1px solid;
             margin:10px;
 
@@ -27,14 +28,16 @@
             cover : 채우기
             contain : 이미지크기를 최대한 유지하면서 컨데이너 공백없이 채우기
             */
-            background-size: 50% 5
-            0%;
+            background-size: 50% 50%;
 
             /* 반복처리 */
             background-repeat: no-repeat;
 
             /* 배치 */
             background-position: center;
+
+            /* 스크롤시 이미지 고정여부 */
+            background-attachment: fixed;
         }
 
     </style>
