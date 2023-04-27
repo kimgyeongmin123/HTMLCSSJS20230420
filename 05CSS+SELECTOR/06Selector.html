@@ -33,9 +33,42 @@
             background-image: url('./image/man.svg');
             background-size: 100%;
         }
+
+        .d2{}
+        .d2>ul{
+            list-style: none;
+            padding:0px;
+        }
+        .d2>ul>li{
+            width:150px;
+            height:35px;
+            border:1px solid gray;
+            text-align: center;
+            line-height:35px;
+        }
+        .d2>ul>li>a{
+            display: block;
+            text-decoration: none;
+        }
+        .d2>ul>li>a::before{
+            content:'★';
+        }
+        .d2>ul>li>a::after{
+            content:'(╹ڡ╹ )'
+        }
     </style>
 </head>
 <body>
-    <div class="d1">헬로월드</div>
+    <div class="d1">화장실 입구</div>
+    <div class="d1"></div>
+    <hr />
+    <div class="d2">
+        <ul>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴2</a></li>
+            <li><a href="">메뉴3</a></li>
+            <li><a href="">메뉴4</a></li>
+        </ul>
+    </div>
 </body>
 </html>

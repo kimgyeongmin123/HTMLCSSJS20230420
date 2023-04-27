@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{}
+        body{margin:0px;}
+        ul{
+            list-style: none;
+            padding:0px;
+        }
+        .wrapper{}
+        .wrapper>header{}
+        .wrapper>header>.top--header{
+            width:1280px;
+            height:30px;
+            background-color: hotpink;
+            line-height: 30px;
+            margin:0 auto;
+        }
+        .wrapper>header>.top--header>ul{
+            display:flex;
+            justify-content: right;
+        }
+        .wrapper>header>.top--header>ul>li{
+            width:100px;
+            text-align: center;
+        }
+        .wrapper>header>.top--header>ul>li>a{
+            text-decoration: none;
+            color:black;
+            display:block;
+            position: relative;
+            font-size: 0.8rem;
+            color:midnightblue;
+        }
+        .wrapper>header>.top--header>ul>li>a::after{
+            content:'|';
+            position:absolute; /*앱솔루트의 상위는 항상 리래이티브로*/
+            top:0px;
+            left:100%;
+        }
+        .wrapper>header>.top--header>ul>li:last-child a::after{ /*a태그 중 마지막 녀석*/
+            content:'';
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header>
+            <div class="top--header">
+                <ul>
+                    <li><a href="">메뉴1</a></li>
+                    <li><a href="">메뉴2</a></li>
+                    <li><a href="">메뉴3</a></li>
+                    <li><a href="">메뉴4</a></li>
+                </ul>
+            </div>
+
+            <nav>
+
+            </nav>
+        </header>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        :first-child    :첫번째 자식요소
+        :last-child     :마지막 자식요소
+        :nth-child      :n번째 자식요소
+        */
+        *{}
+        body{}
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            /* display:block; */
+        }
+        li{}
+
+        .depth1{
+           
+        }
+        .depth1>li{
+            width:120;
+        }
+        .depth1>li:first-child{
+            /* background-color: rgb(139, 133, 179); */
+        }
+        .depth1>li>a{}
+        .depth1>li>a:first-child{
+            background-color: rgb(125, 131, 218);
+        }
+        .depth1>li>.depth2{
+            
+        }
+        .depth1>li>.depth2>li{
+            width:120px;
+        }
+        .depth1>li>.depth2>li>a{
+            display: block;
+        }
+
+        .depth1>li>.depth2>li:first-child{
+            /* background-color: rgb(177, 245, 203); */
+        }
+        .depth1>li>.depth2>li:last-child{
+            /* background-color: rgb(155, 206, 236); */
+        }
+        .depth1>li>.depth2>li:nth-child(2){
+            /* background-color: darksalmon; */
+        }
+        .depth1>li>.depth2>li:nth-child(4){
+            /* background-color: rgb(236, 97, 51); */
+        }
+
+        .depth1>li>.depth2>li:nth-child(2n){    /*짝수*/
+            /* background-color: darksalmon; */
+        }   
+        .depth1>li>.depth2>li:nth-child(2n+1){ /*홀수*/
+            /* background-color: rgb(122, 189, 233); */
+        }
+        .depth1>li>.depth2>li:nth-child(even){ /*짝수*/
+            background-color: rgb(122, 189, 233);
+        }
+        .depth1>li>.depth2>li:nth-child(odd){ /*홀수*/
+            background-color: rgb(215, 122, 233);
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="depth1">
+        <li>
+            <a href="">메뉴1</a>
+            <ul class="depth2">
+                <li><a href="">서브웨이1</a></li>
+                <li><a href="">서브메뉴2</a></li>
+                <li><a href="">서브메뉴3</a></li>
+                <li><a href="">서브메뉴4</a></li>
+                <li><a href="">서브메뉴5</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">메뉴2</a>
+            <ul class="depth2">
+                <li><a href="">서브메뉴1</a></li>
+                <li><a href="">서브메뉴2</a></li>
+                <li><a href="">서브메뉴3</a></li>
+                <li><a href="">서브메뉴4</a></li>
+                <li><a href="">서브메뉴5</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">메뉴3</a>
+            <ul class="depth2">
+                <li><a href="">서브메뉴1</a></li>
+                <li><a href="">서브메뉴2</a></li>
+                <li><a href="">서브메뉴3</a></li>
+                <li><a href="">서브메뉴4</a></li>
+                <li><a href="">서브메뉴5</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">메뉴4</a>
+            <ul class="depth2">
+                <li><a href="">서브메뉴1</a></li>
+                <li><a href="">서브메뉴2</a></li>
+                <li><a href="">서브메뉴3</a></li>
+                <li><a href="">서브메뉴4</a></li>
+                <li><a href="">서브메뉴5</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
