@@ -43,10 +43,68 @@
         .btn:link{
             background-color: chartreuse;
         }
+
+        .d1{
+            width:0px;
+            border-bottom:1px solid;
+            transition: 0.5s;  /*지연값, 변화의 속도를 지연*/
+        }
+
+        .d1:hover{
+            width:150px;
+            border-bottom:1px solid transparent; /*투명*/
+            border-image:linear-gradient(to right,pink, red, rgb(104, 160, 41),rgb(183, 0, 255));
+            border-image-slice:1; /*위에 색깔들을 몇단계로 나눠서 처리할건지*/
+        }
+
+        .d1>input{
+            border:0px;
+            outline:0px;
+        }
+
+        .d2{}
+        .d2>input{}
+        .d2>label{}
+
+        .d2>input[type="checkbox"]:checked+label{ /*d2클래스의 인풋박스안에 체크박스 타입이 체크되었다면 라벨에다가*/
+            color:lightcoral;
+            text-decoration: line-through;
+        }
+
+        .d3{}
+        .d3>input[type="checkbox"]{}
+        .d3>input[type="text"]{}
     </style>
 </head>
 <body>
     <a href="#a" id="a1" class="btn btn--primary">안뇽</a>
     <a href="" id="a2" class="btn btn--secondary">안뇽</a>
+    <hr/>
+
+    <div class="d1"><input type="text"></div>
+    <hr/>
+
+/*인풋과 라벨의 위치 중요*/
+    <div class="d2"> 
+        <input type="checkbox" checked><label for="">나는 체크박스야</label>
+    </div>
+
+    <div class="d3">
+        <input type="checkbox" id="chk" class="chk">
+        <input type="text" id="txt" class="txt" disabled>
+    </div>
+
+    <script>
+        const chkEl = document.querySelector('.chk');
+        const txtEl = document.querySelector('.txt');
+        chkEl.addEventListener('change',function(){
+            // alert("동작확인!");
+            if(this.checked){
+                txtEl.disabled=false;
+            } else{
+                txtEl.disabled=true;
+            }
+        });
+    </script>
 </body>
 </html>
