@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{}
+        body{}
+        ul{
+            list-style:none;
+            padding:0px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        .mainmenu{
+            border:1px solid black;
+            display: flex;
+            justify-content: space-around;
+        }
+        .mainmenu>li{
+            border:1px solid hotpink;
+            width:120px;
+            position: relative;
+        }
+        .mainmenu>li:hover .submenu{ /*메인메뉴의 리스트에 마우스를 올려놓았을때의 서브메뉴 설정*/
+            display: block;
+        }
+        .mainmenu>li>a{
+            border:1px solid blue;
+            display: block;
+            text-align: center;
+            height:30px;
+            line-height: 30px;  /*수직배치*/
+        }
+        .mainmenu>li>.submenu{
+             border:1px solid rgb(94, 141, 22);
+             position: absolute;
+             left:0;
+             top:30px;
+             width:100%;
+             display: none;
+        }
+        .mainmenu>li>.submenu>li{
+            border:1px solid orchid;
+            text-align: center;
+        }
+        .mainmenu>li>.submenu>li>a{
+            display: block;
+        }
+        /* .mainmenu>li:last-child:after{
+            content:'';
+            width:100vw;
+            height:400px;
+            position:absolute;
+            top:50px;
+            left:0px;
+            background-color: antiquewhite;
+            z-index: -2;
+            display: none;
+        }
+        .mainmenu:hover::after{
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+    <!-- ul>li>a>ul>li*4>a -->
+    <!-- 첫번째 ul은 메인메뉴 두번째 ul은 서브메뉴 -->
+    <!-- 
+        기본 스타일 설정
+        메인메뉴의 리스트 : position : relative
+        서브메뉴 : position : absolute
+        메인메뉴의 리스트에 마우스 올려놓았을떄(.mainmunu>li:hover .submenu)
+        나머지 등등 디자인
+     -->
+
+    <ul class="mainmenu">
+        <li>
+            <a href="">메뉴</a>
+                <ul class="submenu">
+                    <li><a href="">서브메뉴1</a></li>
+                    <li><a href="">서브웨이2</a></li>
+                    <li><a href="">서브메뉴3</a></li>
+                    <li><a href="">서브웨이4</a></li>
+                </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>
