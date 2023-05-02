@@ -1,0 +1,10 @@
+*{margin:2px;} /*전체 마진 2px*/
+        body{}
+        a{}
+        ul{}
+        .wrapper{
+            width:1800px;
+            /* height:1200px; */
+            border:1px solid;
+            margin:0 auto;  /*가운데로 맞춤*/
+        }

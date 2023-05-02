@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .underline{
+            position: relative;  /*얘를 기준으로 라는 뜻*/
+        }
+        .underline>input{
+            width:200px;
+            height:30px;
+            border:0px;
+            outline:0;
+        }
+        .underline>span{
+            display: block;  /*width를 조정하기위해*/
+            width:0px;
+            height:1px;
+            /* background-color: lightcoral; */
+            background:linear-gradient(to right, red, pink, violet);
+            transition:0.5s;
+
+            position:absolute;
+            top:80%;
+            left:0px;
+        }
+
+        .underline>input:focus+span{  /*인풋에게 포커스가 될때 스팬의 스타일*/
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="underline">
+        <input type="text">
+        <span></span>
+    </div>
+</body>
+</html>

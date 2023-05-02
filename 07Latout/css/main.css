@@ -1,0 +1,66 @@
+.wrapper>main{
+    /* height:600px; */
+    border:1px solid;
+}
+.wrapper>main>section{
+    border:1px solid orange;
+}
+.wrapper>main>section:nth-child(1){
+    height:400px;
+    display: flex;
+    margin:0 auto;
+}
+.wrapper>main>section:nth-child(1)>aside{
+    border:1px solid;
+    width:300px;
+}
+.wrapper>main>section:nth-child(1)>article{
+    border:1px solid;
+    flex-grow: 1;
+}
+
+.wrapper>main>section:nth-child(2){
+    height:500px;
+    display: flex;
+}
+.wrapper>main>section:nth-child(2)>aside{
+    border:1px solid;
+    width:300px;
+    background-color: rgb(207, 135, 186);
+}
+.wrapper>main>section:nth-child(2)>article{
+    border:1px solid;
+    flex-grow: 1;
+    background-color: rgb(192, 158, 214);
+}
+
+.wrapper>main>section:nth-child(3){
+    height:400px;
+    flex-direction: column;
+    display: flex;
+}
+
+.wrapper>main>section:nth-child(3)>article{
+    border:1px solid;
+    height:48px;
+    background-color: rgba(166, 53, 218, 0.322);
+}
+
+.wrapper>main>section:nth-child(3)>div{
+    display:flex;
+    border:1px solid gray;
+    align-items: center;
+    height:280px;
+}
+.wrapper>main>section:nth-child(3)>div>aside{
+    border:1px solid;
+    width:300px;
+    background-color: rgba(207, 95, 189, 0.432);
+    align-self: stretch;
+}
+.wrapper>main>section:nth-child(3)>div>article{
+    border:1px solid;
+    flex-grow: 1;
+    height:280px;
+    background-color: rgb(243, 162, 223);
+}
