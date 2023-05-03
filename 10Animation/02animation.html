@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+        }
+        .animation--test{
+            width:400px;
+            margin:100px auto;
+        }
+        .animation--test>div{
+            width:400px;
+            height:40px;
+            background-color: lightpink;
+            text-align: center;
+            line-height: 40px;
+            border:1px solid gray;
+        }
+        .animation--test>.d1{
+            /* position: absolute; */
+            animation-name: moving1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .animation--test>.d2{
+            /* position: absolute; */
+            animation-name: moving2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .animation--test>.d3{
+            /* position: absolute; */
+            animation-name: moving3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .animadiv{
+            /* position:relative; */
+        }
+
+        @keyframes moving1{
+            from{
+                top:900px;
+            }
+            to{
+                top:0px;
+            }
+        }
+        @keyframes moving2{
+            from{
+                left:900px;
+            }
+            to{
+                left:0vw;
+            }
+        }
+        @keyframes moving3{
+            from{
+                margin-top: 900px;
+                margin-left:900px;
+            }
+            to{
+                margin-top: 0vw;
+                margin-left: 0vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation--test">
+        <div class="d1">안녕</div>
+        <div class="d2">헬로</div>
+        <div class="d3">하이</div>
+    </div>
+</body>
+</html>

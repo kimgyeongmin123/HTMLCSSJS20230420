@@ -14,7 +14,7 @@
         Get : 사용자정보를 Query String으로 전달(기본값)
         Post : 사용자정보를 Request body(Payload) 로 전달
      -->
-    <form action="test.jsp" method="get">
+    <!-- <form action="test.jsp" method="get">
         <div>
         <label for="name">이름 : </label><input type="text" name="name" id="name" required/> <br/>
         </div>
@@ -64,20 +64,21 @@
             <input type="tel" pattern="[0-9]{4}"/>      <br />    
             
             </div>
-        </div>
+        </div> -->
 
+ (?=.*[A-Z]) (?=.*[0-9]) (?=.*[?!@#$%^&*]).{10,18}
         <div>
         <label>PASSWORD : </label>
             <div>
                 <input type="password"
                 name="password"
                 placeholder="Insert Password"
-                pattern="(?=.*[a-z]) (?=.*[A-Z]) (?=.*[0-9]) (?=.*[?!@#$%^&*]).{10,18}" 
+                pattern="(?=.*[a-z])" 
                 required 
-                title="영문소문자/대문자/특수문자/숫자 중 3개이상 포함, 길이는 10-18해라">
+                title="영문소문자/대문자/특수문자/숫자를 모두 포함, 길이는 10-18">
             </div>
         </div>
     <input type="submit" />
-    </form>
+    <!-- </form> -->
 </body>
 </html>

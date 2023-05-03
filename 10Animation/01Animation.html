@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:400px;
+            height:40px;
+            background-color: lightpink;
+            text-align: center;
+            line-height: 40px;
+            border:1px solid gray;
+        }
+        .d1{
+            animation-name: moving1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;/*몇회반복하겠냐*/
+            animation-direction: alternate; /*왔다갔다하는 작업*/
+        }
+        .d2{
+            animation-name: moving2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;/*몇회반복하겠냐*/
+            animation-direction: alternate; /*왔다갔다하는 작업*/
+        }
+        @keyframes moving1{
+            from{
+                margin-left:100%;
+            }
+            to{
+                margin-left:0%;
+            }
+        }
+        @keyframes moving2{
+            from{
+                margin-top:100%;
+            }
+            to{
+                margin-bottom:0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">헬로</div>
+    <div class="d2">월드</div>
+</body>
+</html>
