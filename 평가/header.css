@@ -1,0 +1,104 @@
+.wrapper>header {
+    border:1px solid;
+}
+
+.wrapper>header>.top-header {
+    border:1px solid;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+}
+
+.wrapper>header>.top-header>.logo {
+    text-align: center;
+    border:1px solid;
+    font-size: 15px;
+    width:100px;
+    height:30px;
+    line-height: 30px;
+}
+
+.wrapper>header>.top-header>ul {
+    border:1px solid red;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-left:0;
+}
+
+.wrapper>header>.top-header>ul>li {
+    width:80px;
+    border:1px solid;
+    position:relative;
+    text-align: center;
+}
+
+ 
+.wrapper>header>.top-header>ul>li>a {
+    display: block;
+}
+
+.wrapper>header>.top-header>.sitemenu{
+    display: none;
+}
+
+.wrapper>header>nav {
+ /* border:1px solid; */
+}
+
+.wrapper>header>nav>ul {
+    display: flex;
+    border:1px solid;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper>header>nav>ul>li {
+    border:1px solid;
+    height:30px;
+    flex-grow: 1;
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+}
+
+.wrapper>header>nav>ul>li>a {
+    display: block;
+    
+}
+
+.wrapper>header>nav>ul>li>ul{
+    background-color: white;
+
+    /*서브메뉴 안보이게*/
+    display: none;    
+
+    position: absolute;
+    width:100%;
+    padding:0;
+    margin-top:12px;
+    
+}
+.wrapper>header>nav>ul>li>ul>li{   
+ height:30px;
+ border:1px solid;
+ font-size: 12px;
+}
+
+.wrapper>header>nav>ul>li>ul>li>a{ /*서브메뉴*/
+ text-align: center;
+ line-height: 30px;
+ display: block;
+ 
+}
+.wrapper>header>nav>ul>li:hover ul{ /*메뉴에 마우스를 올려놨을때의 서브메뉴지정*/
+    display: block;
+
+}
+
+
+

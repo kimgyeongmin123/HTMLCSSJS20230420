@@ -1,0 +1,81 @@
+.wrapper>main {}
+
+.wrapper>main>section {
+    border:1px solid;
+    height:500px;
+    text-align: center;
+    line-height: 500px;
+}
+
+.wrapper>main>section:nth-child(1) {
+    border: 1px solid;
+    display: flex;
+    height: 500px;
+
+}
+
+.wrapper>main>section:nth-child(1)>aside {
+    border: 1px solid;
+    flex-grow: 1;
+}
+
+.wrapper>main>section:nth-child(1)>article {
+    border: 1px solid;
+    width: 1300px;
+}
+
+.wrapper>main>section:nth-child(2) {
+    /* border:1px solid; */
+}
+
+
+
+
+.container {
+    /* border:1px solid; */
+    width:150px;
+    height:150px;
+    position: fixed;
+    margin:auto;
+    left:0px;right:0px;top:500px;
+}
+
+.container>.card {
+    width: 150px;
+    height: 150px;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.container>.card>.front,
+.container>.card>.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+
+    backface-visibility: hidden;
+    /*백을뒤로*/
+
+    text-align: center;
+    line-height: 150px;
+}
+
+.container>.card>.front {
+    background-color: rgba(151, 151, 236, 0.808);
+
+}
+
+.container>.card>.front:hover .back{
+}
+
+.container>.card>.back {
+    background-color: darkslategrey;
+    transform: rotateY(180deg);
+}
+
+.container:hover .card {
+    transform: rotateY(180deg);
+}
