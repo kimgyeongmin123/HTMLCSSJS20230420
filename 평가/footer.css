@@ -24,8 +24,7 @@
 }
 
 .wrapper>footer>.footer-top>ul>li>a {
-    /* display: block; */
-
+    display: block;
 }
 
 .wrapper>footer>.footer-body {

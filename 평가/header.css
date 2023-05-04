@@ -8,20 +8,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: relative; */
+    background-color: rgba(101, 101, 101, 0.157);
 }
 
 .wrapper>header>.top-header>.logo {
     text-align: center;
-    border:1px solid;
+    /* border:1px solid; */
     font-size: 15px;
     width:100px;
     height:30px;
     line-height: 30px;
+    border-radius: 20px;
 }
 
 .wrapper>header>.top-header>ul {
-    border:1px solid red;
+    /* border:1px solid red; */
     display: flex;
     justify-content: right;
     align-items: center;
@@ -33,6 +34,7 @@
     border:1px solid;
     position:relative;
     text-align: center;
+    border-radius: 10px;
 }
 
  
@@ -52,8 +54,8 @@
     display: flex;
     border:1px solid;
     padding: 0;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /*가로중앙정렬*/
+    align-items: center; /*세로중앙정렬*/
     flex-wrap: wrap;
 }
 
@@ -64,6 +66,7 @@
     position: relative;
     text-align: center;
     line-height: 30px;
+    border-radius: 10px;
 }
 
 .wrapper>header>nav>ul>li>a {
@@ -80,13 +83,15 @@
     position: absolute;
     width:100%;
     padding:0;
-    margin-top:12px;
+    /* margin-top:0px; */
     
 }
 .wrapper>header>nav>ul>li>ul>li{   
  height:30px;
  border:1px solid;
  font-size: 12px;
+ border-radius: 5px;
+ background-color: rgba(62, 62, 62, 0.246);
 }
 
 .wrapper>header>nav>ul>li>ul>li>a{ /*서브메뉴*/
