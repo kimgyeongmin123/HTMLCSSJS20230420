@@ -24,7 +24,7 @@
 }
 
 .wrapper>footer>.footer-top>ul>li>a {
-    display: block;
+    display: block; /*네모칸 텍스트가 없는 빈부분도 눌리게 한다*/
 }
 
 .wrapper>footer>.footer-body {
