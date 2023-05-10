@@ -9,11 +9,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(101, 101, 101, 0.157);
-    position: fixed;
     background-color: darkgray;
-    width:80%;
     margin:0px;
-    z-index: 2;
 }
 
 .wrapper>header>.top-header>.logo {
@@ -53,8 +50,6 @@
 }
 
 .wrapper>header>nav {
- /* border:1px solid; */
- margin-top: 50px;
 }
 
 .wrapper>header>nav>ul {
