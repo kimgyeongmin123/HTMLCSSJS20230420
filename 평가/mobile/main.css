@@ -11,6 +11,9 @@
 .wrapper>main>section:nth-child(1)>aside{
 
 }
+.wrapper>main>section:nth-child(1)>aside>h2{
+    display: none;
+}
 .wrapper>main>section:nth-child(1)>article{
     
     background-repeat: no-repeat;
